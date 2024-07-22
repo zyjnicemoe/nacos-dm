@@ -29,7 +29,7 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
-public class ConfigTagsRelationMapperByMySqlTest {
+public class ConfigTagsRelationMapperByDmTest {
     
     private ConfigTagsRelationMapperByMySql configTagsRelationMapperByMySql;
     

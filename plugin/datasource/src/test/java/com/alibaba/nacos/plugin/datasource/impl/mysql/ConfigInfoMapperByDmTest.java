@@ -30,7 +30,7 @@ import org.junit.Test;
 import java.sql.Timestamp;
 import java.util.List;
 
-public class ConfigInfoMapperByMySqlTest {
+public class ConfigInfoMapperByDmTest {
     
     private ConfigInfoMapperByMySql configInfoMapperByMySql;
     

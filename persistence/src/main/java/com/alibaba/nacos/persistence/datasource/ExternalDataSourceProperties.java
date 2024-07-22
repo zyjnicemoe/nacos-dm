@@ -48,7 +48,8 @@ public class ExternalDataSourceProperties {
     private List<String> user = new ArrayList<>();
     
     private List<String> password = new ArrayList<>();
-    
+    private List<String> jdbcDriverName = new ArrayList<>();
+
     public void setNum(Integer num) {
         this.num = num;
     }
@@ -83,7 +84,7 @@ public class ExternalDataSourceProperties {
             Preconditions.checkArgument(url.size() >= currentSize, "db.url.%s is null", index);
             DataSourcePoolProperties poolProperties = DataSourcePoolProperties.build(environment);
             if (StringUtils.isEmpty(poolProperties.getDataSource().getDriverClassName())) {
-                poolProperties.setDriverClassName(JDBC_DRIVER_NAME);
+                poolProperties.setDriverClassName(getOrDefault(jdbcDriverName,index,jdbcDriverName.get(index)).trim());
             }
             poolProperties.setJdbcUrl(url.get(index).trim());
             poolProperties.setUsername(getOrDefault(user, index, user.get(0)).trim());
@@ -99,7 +100,15 @@ public class ExternalDataSourceProperties {
         Preconditions.checkArgument(CollectionUtils.isNotEmpty(dataSources), "no datasource available");
         return dataSources;
     }
-    
+
+    public List<String> getJdbcDriverName() {
+        return jdbcDriverName;
+    }
+
+    public void setJdbcDriverName(List<String> jdbcDriverName) {
+        this.jdbcDriverName = jdbcDriverName;
+    }
+
     interface Callback<D> {
         
         /**

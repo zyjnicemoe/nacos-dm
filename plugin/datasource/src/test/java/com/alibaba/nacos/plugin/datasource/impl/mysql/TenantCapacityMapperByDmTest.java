@@ -27,7 +27,7 @@ import org.junit.Test;
 
 import java.sql.Timestamp;
 
-public class TenantCapacityMapperByMySqlTest {
+public class TenantCapacityMapperByDmTest {
     
     private TenantCapacityMapperByMySql tenantCapacityMapperByMySql;
     

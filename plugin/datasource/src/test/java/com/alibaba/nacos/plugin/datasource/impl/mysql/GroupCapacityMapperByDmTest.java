@@ -27,7 +27,7 @@ import org.junit.Test;
 
 import java.sql.Timestamp;
 
-public class GroupCapacityMapperByMysqlTest {
+public class GroupCapacityMapperByDmTest {
     
     private GroupCapacityMapperByMysql groupCapacityMapperByMysql;
     

@@ -32,7 +32,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RunWith(JUnit4.class)
-public class ConfigInfoAggrMapperByMySqlTest {
+public class ConfigInfoAggrMapperByDmTest {
     
     private ConfigInfoAggrMapperByMySql configInfoAggrMapperByMySql;
     

@@ -27,7 +27,7 @@ import org.junit.Test;
 
 import java.sql.Timestamp;
 
-public class HistoryConfigInfoMapperByMySqlTest {
+public class HistoryConfigInfoMapperByDmTest {
     
     private HistoryConfigInfoMapperByMySql historyConfigInfoMapperByMySql;
     
