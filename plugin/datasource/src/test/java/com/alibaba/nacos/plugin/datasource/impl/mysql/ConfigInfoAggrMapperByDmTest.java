@@ -30,7 +30,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ConfigInfoAggrMapperByMySqlTest {
+class ConfigInfoAggrMapperByDmTest {
     
     private ConfigInfoAggrMapperByMySql configInfoAggrMapperByMySql;
     

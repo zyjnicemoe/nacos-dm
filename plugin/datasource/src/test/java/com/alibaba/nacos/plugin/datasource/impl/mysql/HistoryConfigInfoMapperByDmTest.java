@@ -29,7 +29,7 @@ import java.sql.Timestamp;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class HistoryConfigInfoMapperByMySqlTest {
+class HistoryConfigInfoMapperByDmTest {
     
     int startRow = 0;
     

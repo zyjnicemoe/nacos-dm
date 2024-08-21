@@ -152,6 +152,7 @@
         <spring.version>5.3.34</spring.version>
         <spring-security.version>5.7.12</spring-security.version>
         <junit5.version>5.10.2</junit5.version>
+        <dm-jdbc.version>1.8</dm-jdbc.version>
     </properties>
     <!-- == -->
     <!-- =========================================================Build plugins================================================ -->
@@ -622,6 +623,11 @@
     
     <!-- Default dependencies in all subprojects -->
     <dependencies>
+        <dependency>
+            <groupId>dm.jdbc</groupId>
+            <artifactId>DmJdbcDriver</artifactId>
+            <version>${dm-jdbc.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>

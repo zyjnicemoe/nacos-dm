@@ -33,7 +33,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ConfigInfoMapperByMySqlTest {
+class ConfigInfoMapperByDmTest {
     
     private final Object[] emptyObjs = new Object[] {};
     

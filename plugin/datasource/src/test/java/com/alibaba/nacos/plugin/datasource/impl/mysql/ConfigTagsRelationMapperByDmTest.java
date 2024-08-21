@@ -31,7 +31,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ConfigTagsRelationMapperByMySqlTest {
+class ConfigTagsRelationMapperByDmTest {
     
     int startRow = 0;
     
